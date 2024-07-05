@@ -4,8 +4,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blub toggle & theme changer</title>
+    <style>
+        .body{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            display: block;
+            margin: auto;
+            height: 90%;
+            width: 80%;   
+            background-color: blueviolet;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border-radius: 4px;
+    }
+       .image{
+         height: 250px;
+         margin-top: 20px;
+       }
+       .btn{
+        margin: 50px;
+       }
+       .btn button{
+        margin: 30px;
+        height: 50px;
+        width: 90px;
+        font-weight: bolder;
+        font-size: 25px;
+        cursor: pointer;
+       }
+    </style>
 </head>
 <body>
-   
+    <div class="container">
+        <h1>Blub Toggle</h1>
+        <img src="lightbulb.png" class="image"/>
+      <div class="btn">
+        <button id="on-btn" onclick="onbutton()">ON</button>
+        <button id="off-btn">OFF</button>
+      </div>
+</div>
+<script>
+         function onbutton(){
+
+         }
+</script>
 </body>
 </html>

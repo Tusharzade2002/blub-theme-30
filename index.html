@@ -42,16 +42,21 @@
 <body>
     <div class="container">
         <h1>Blub Toggle</h1>
-        <img src="lightbulb.png" class="image"/>
+        <img src="lightbulb.png" class="image" id="img"/>
       <div class="btn">
-        <button id="on-btn" onclick="onbutton()">ON</button>
-        <button id="off-btn">OFF</button>
+        <button id="on-btn" onclick="toggle()">Toggle</button>
       </div>
 </div>
-<script>
-         function onbutton(){
-
-         }
+<script>   
+          let imgElement = document.getElementById("img")
+         function toggle(){
+                    if(imgElement.src.includes("lightbulb.png")){
+                        imgElement.src="lightbulb on.png"
+                    }
+                    else{
+                        imgElement.src="lightbulb.png"
+                    }
+        }
 </script>
 </body>
 </html>
